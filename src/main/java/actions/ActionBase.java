@@ -112,8 +112,7 @@ public abstract class ActionBase {
 
         //URLへリダイレクト
         response.sendRedirect(redirectUrl);
-
-    }
+        }
 
     /**
      * CSRF対策 token不正の場合はエラー画面を表示
