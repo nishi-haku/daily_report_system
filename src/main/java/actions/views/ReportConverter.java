@@ -25,8 +25,7 @@ public class ReportConverter {
                 rv.getContent(),
                 rv.getCreatedAt(),
                 rv.getUpdatedAt());
-    }
-
+                }
     /**
      * DTOモデルのインスタンスからViewモデルのインスタンスを作成する
      * @param r Reportのインスタンス
@@ -58,10 +57,10 @@ public class ReportConverter {
 
         for (Report r : list) {
             evs.add(toView(r));
-        }
+            }
 
         return evs;
-    }
+        }
 
     /**
      * Viewモデルの全フィールドの内容をDTOモデルのフィールドにコピーする
@@ -76,7 +75,6 @@ public class ReportConverter {
         r.setContent(rv.getContent());
         r.setCreatedAt(rv.getCreatedAt());
         r.setUpdatedAt(rv.getUpdatedAt());
-
-    }
+        }
 
 }
